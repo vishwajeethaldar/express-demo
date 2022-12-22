@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.end()
 })
 
+app.get('/api', (req, res) => {
+  res.send('api.html');
+  res.end()
+})
 
 app.listen(process.env.PORT || 3000);
 
